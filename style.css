@@ -4,11 +4,10 @@
     box-sizing: border-box;
 }
 
+
 body{
   
    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
 }
 .container{
     width: 1600px;
@@ -34,7 +33,7 @@ body{
 .social span{
     color: white;
     margin-right: 20px;
-    font-size: 16px;
+    
     font-weight: 600                                            ;
 }
 .social ul, .contact ul{
@@ -93,7 +92,7 @@ body{
     margin-right: 40px;
     text-decoration: none;
     color:#152137 ;
-    font-size: 16px;
+    
     font-weight: 500;
     
 }
@@ -183,7 +182,7 @@ body{
     padding: 20px 30px;
     border: none;
     color: white;
-    font-size: 16px;
+    
     font-weight: 600;
     margin: 0;
 }
@@ -229,8 +228,6 @@ body{
 }
 
 .about-text .section-title span{
-    
- 
     background-color: #142137B2;
     
 }
@@ -290,6 +287,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 64px 50px;
+    text-align: center;
 
 }
 .info span{
@@ -297,26 +296,101 @@ body{
     line-height: 60px;
     font-weight: 600;
     color: #142137;
+    margin-bottom: 24px;
 }
 .info p{
     font-size:16px;
-    line-height: 22px;
+    line-height:22px;
     font-weight: 500;
     color: #142137B2;
+
 }
 /* service area */
 .services-area {
     background-color: #ecf2fe;
     margin-bottom: 150px;
-    padding: 60px;
+    
 }
 
-.service-heading {
+.service-heading{
     text-align: center;
+    width: 662px;
+    margin: 0 auto 80px;
+    padding-top: 60px;
+
+}
+.service-title {
+    margin: 0 auto;
+    font-weight: 500;
+    border: 1px solid #ddd;
+    margin-bottom: 34px;
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 14px;
+    max-width: fit-content;
 }
 .service-title span{
-     width: 5px;
+    width: 5px;
     height: 5px;
-    background-color: #fff;
+    background-color: #000;
     border-radius: 50%;
+}
+.service-title p{
+    font-weight: 500;
+    color: #142137B2;
+}
+.service-heading h2{
+    font-size:54px ;
+    font-weight: 600;
+    line-height:64px;
+    color: #142137;
+    letter-spacing: -1.08px;
+    
+}
+.service-details{
+    display: flex;
+    padding-bottom: 190px;
+}
+.single-service{
+    padding-left: 60px; 
+    border-right: 1px solid #14213724;
+    padding-right: 60px;
+}
+.single-service svg{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 50px;
+
+}
+.single-service h4{
+    font-size: 30px;
+    color: #142137;
+    margin-bottom: 34px;
+
+}
+.single-service h4:hover{
+    color: #4375E7;
+}
+.single-service p{
+    
+    color: #142137B2;
+    margin-bottom: 80px;
+    line-height: 26px;
+}
+
+.read-more{
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: #142137;
+    background-color: transparent;
+}
+.single-service img{
+    margin-left:  -60px;
+    margin-right:  -60px;
+    width: 481px;
+    height: 320px;
+    
+   
 }
