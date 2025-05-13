@@ -212,6 +212,7 @@ body{
 .about-content{
     display: flex;
     justify-content: space-between;
+    align-items: last baseline
 }
 .about-text{
     max-width: 50%;
@@ -259,4 +260,63 @@ body{
     border: 1px solid #14213724;
     font-size: 15px;
     font-weight: 500;
+    margin-bottom:100px ;
+}
+
+.main-image{
+    position: relative;
+    z-index:-1;
+}
+.experience-image{
+    position:absolute;
+    left: 240px;
+    bottom: 0px;
+    z-index: 10;
+}
+
+/* about info */
+.infos{
+    display: flex;
+    gap:24px ;
+    align-items: center;
+    margin-bottom: 110px;
+}
+.info{
+    width: 220px;
+    height: 220px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.info span{
+    font-size:50px;
+    line-height: 60px;
+    font-weight: 600;
+    color: #142137;
+}
+.info p{
+    font-size:16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #142137B2;
+}
+/* service area */
+.services-area {
+    background-color: #ecf2fe;
+    margin-bottom: 150px;
+    padding: 60px;
+}
+
+.service-heading {
+    text-align: center;
+}
+.service-title span{
+     width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
 }
