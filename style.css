@@ -7,7 +7,8 @@
 body{
   
    font-family: "Poppins", sans-serif;
-
+    font-size: 16px;
+    font-weight: 500;
 }
 .container{
     width: 1600px;
@@ -62,6 +63,8 @@ body{
 
 .contact ul li {
     display: flex;
+    align-items: center;
+    gap: 5px;
     margin-right: 10px;
 
 }
@@ -91,7 +94,7 @@ body{
     text-decoration: none;
     color:#152137 ;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     
 }
 .cta-btn button{
@@ -102,7 +105,7 @@ body{
     align-items: center;
     gap: 5px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .hero-area{
@@ -114,6 +117,7 @@ body{
     background-size: cover;
     position: relative;
     z-index: -1;
+    margin-bottom: 150px;
 }
    
 
@@ -124,13 +128,135 @@ body{
     content: '';
     left: 0;
     top: 0;
-    background: linear-gradient(to right, #152137  , #E3E9FD );
-    opacity: 90%;
+    background: linear-gradient(90deg, #142137 0%, rgba(20, 33, 55, 0.10) 89.82%); 
+    opacity: 60%;
     z-index: -10;
     
 }
 .hero-content{
     z-index: 10;
     color: white;
-}
+    padding: 160px 0;
    
+}
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 182px;
+    background-color: #4a5666;
+    padding: 9px 10px;
+    margin-bottom: 40px;
+
+}
+.section-title span{
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.hero-text h1{
+   font-size: 100px;
+   font-weight: 600;
+    line-height: 110px;
+    margin-bottom: 35px;
+}
+.hero-des{
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFFB2;
+}
+.hero-text button{
+    margin-bottom: 35px;
+}
+.booking-control{
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    padding: 0;
+    margin: 0;
+}
+.booking-control button{
+    background: #4375e6;
+    padding: 20px 30px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+.customer-review{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.clients-images img{
+    width: 54px;
+    height: 54px;    
+}
+
+.ratings p{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+/* about style */
+.about-area{
+    margin-bottom: 150px;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+}
+.about-text{
+    max-width: 50%;
+}
+
+.about-text .section-title{
+    width: 208px;
+    color: #142137B2;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 9px 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 34px;
+}
+
+.about-text .section-title span{
+    
+ 
+    background-color: #142137B2;
+    
+}
+
+.about-text .section-title p{
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.about-text h1{
+    font-size: 54px;
+    line-height: 64px;
+    font-weight: 600;
+    color: #142137;
+    margin-bottom: 40px;
+}
+.about-text p{
+    margin-bottom: 40px;
+    font-size:16px;
+    line-height: 26px;
+    color: #142137B2;
+    max-width: 646px;
+}
+
+.discover-more{
+    padding: 22px 34px;
+    background-color: #fff;
+    border: 1px solid #14213724;
+    font-size: 15px;
+    font-weight: 500;
+}
