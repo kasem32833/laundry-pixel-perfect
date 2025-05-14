@@ -8,6 +8,7 @@
 body{
   
    font-family: "Poppins", sans-serif;
+   color: #142137B2;
 }
 .container{
     width: 1600px;
@@ -142,7 +143,7 @@ body{
     display: flex;
     align-items: center;
     gap: 8px;
-    width: 182px;
+    width: fit-content;
     background-color: #4a5666;
     padding: 9px 10px;
     margin-bottom: 40px;
@@ -393,4 +394,181 @@ body{
     height: 320px;
     
    
+}
+/* order-area */
+.order-area{
+    margin-bottom: 150px;
+}
+.order-heading{
+    text-align: center;
+    margin: 0 auto;
+}
+.order-heading h2{
+    font-size: 54px;
+    line-height: 64px;
+    font-weight: 600;
+    color: #142137;
+    margin-bottom: 34px;
+}
+.order-heading p{
+    line-height: 26px;
+    margin-bottom: 70px;
+}
+.service-video {
+    background-image: url(./assets/img/video-bg.jpg);
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 120px;
+}
+.service-video img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.single-order{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.order-icon{
+    
+    background-color: transparent;
+    width: 270px;
+    height: 135px;
+    border: 1px solid #000;
+    
+    position: relative;
+    margin-bottom: 150px;
+    
+}
+.order-icon-1, .order-icon-3{
+    border-radius: 270px 270px 0 0;
+}
+.order-icon-2 svg, .order-icon-4 svg{
+    margin-bottom: 42px;
+    
+}
+.order-icon-1 svg, .order-icon-3 svg{
+    margin-bottom: -85px;
+    
+}
+.order-icon-2 , .order-icon-4 {
+    border-radius:  0 0 270px 270px;
+    
+}
+
+
+.order-icon svg{
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    margin-left: -85px;
+   
+   
+} 
+.order-details{
+    display: flex;
+    justify-content: space-between;
+}  
+/* blog area */
+.blog-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+.blog-title{
+    max-width: 50%;
+}
+.blog-title .section-title{
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.blog-title .section-title span{
+    background-color: #142137;
+    
+}
+
+.blog-title h2{
+    font-size: 54px;
+    line-height: 64px;
+    color: #142137;
+}
+
+/* copyright  */
+.footer-area{
+    background-color: #142137;
+    padding-top: 130px;
+    padding-bottom: 34px;
+}
+
+.footer-menu{
+    display: flex;
+
+}
+
+.footer-logo {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-logo p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.brand p{
+color: #FFFFFFB2;
+line-height: 26px; /* 162.5% */
+margin-bottom: 40px;
+}
+.contact{
+    display: flex;
+    gap: 14px;
+}
+.contact-icon{
+    width: 46px;
+    height: 46px;
+    background: transparent;
+    border: 1.5px solid #FFFFFF1A;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-details span{
+    color: #4375E7;
+}
+.contact-details p{
+    color: #fff;
+    line-height: 24px;
+    font-weight: 600;
+
+}
+
+.copyright{
+    color: #FFFFFFB2;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    border-top: 1px solid #FFFFFF1A;
+}
+
+.copyright a{
+    color: #FFFFFFB2;
+    text-decoration: none;
+}
+.service-menu p, .quick-links p{
+    color: #FFFF;
+}
+.service-menu ul li{
+    color: #FFFFFFB2;
+    list-style: none;
 }
