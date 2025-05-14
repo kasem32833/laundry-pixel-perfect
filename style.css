@@ -1,3 +1,4 @@
+/* common css start */
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +15,25 @@ body{
     width: 1600px;
     margin: 0 auto;
 }
+
+.section-heading{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-heading h2{
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 64px;
+    color: #142137;
+}
+
+
+/* common css end */
 
 .header-top-area{
     background-color: #4375e6;
@@ -97,7 +117,7 @@ body{
     font-weight: 500;
     
 }
-.cta-btn button{
+.cta-btn {
     background-color: white;
     border: 1px solid #ddd;
     padding: 15px 30px;
@@ -475,12 +495,27 @@ body{
 .order-details{
     display: flex;
     justify-content: space-between;
-}  
+}
+/* testimonial area */
+.testimonial-area{
+    background-color: #ECF2FE;
+    padding-top: 100px;
+    padding-bottom: 135px;
+}
 /* blog area */
+.blog-area{
+    margin-bottom: 150px;
+}
+.blog-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .blog-header{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-end;
+    margin-bottom: 70px;
     
 }
 .blog-title{
@@ -501,6 +536,60 @@ body{
     color: #142137;
 }
 
+.see-more{
+    background-color: transparent;
+    padding: 17px;
+    border: 1px solid #14213724;
+    width: fit-content;
+}
+.blog-bg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 250px;
+    margin-bottom: 23px;
+}
+
+.blog-image-1{
+    background-image: url(./assets/img/blog-1.jpg);
+}
+
+.blog-image-2{
+    background-image: url(./assets/img/blog-2.jpg);
+}
+
+.blog-image-3{
+    background-image: url(./assets/img/blog-3.jpg);
+}
+
+.blog-image-4{
+    background-image: url(./assets/img/blog-4.jpg);
+}
+.meta-data{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #00000033;
+    margin-bottom: 24px;
+}
+ .meta-data .data, .meta-data .commetn{
+    display: flex;
+    align-items: center;
+}
+
+.single-blog h4{
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #142137;
+    max-width: 326px;
+}
+.single-blog{
+    max-width: 25%;
+}
+
 /* copyright  */
 .footer-area{
     background-color: #142137;
@@ -510,9 +599,12 @@ body{
 
 .footer-menu{
     display: flex;
+    justify-content: space-between;
 
 }
-
+.footer-menu .brand{
+    max-width: 25%;
+}
 .footer-logo {
     display: flex;
     gap: 30px;
@@ -552,7 +644,6 @@ margin-bottom: 40px;
     font-weight: 600;
 
 }
-
 .copyright{
     color: #FFFFFFB2;
     display: flex;
@@ -571,4 +662,10 @@ margin-bottom: 40px;
 .service-menu ul li{
     color: #FFFFFFB2;
     list-style: none;
+}
+
+.footer-menu h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
 }
