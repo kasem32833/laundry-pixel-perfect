@@ -496,6 +496,75 @@ body{
     display: flex;
     justify-content: space-between;
 }
+/* team area */
+.team-wrapper .section-heading{
+    margin-bottom: 72px;
+}
+.team-wrapper .section-title{
+    background-color: #fff;
+    border: 1px solid #14213724;
+}
+.team-area{
+    margin-bottom: 150px;
+    padding: ;
+}
+.team-members{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.member-image{
+    width: 390px;
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.member-1{
+    background-image:url(./assets/img/member-1.jpg) ;
+}
+.member-2{
+    background-image:url(./assets/img/member-2.jpg) ;
+}
+.member-3{
+    background-image:url(./assets/img/member-3.jpg) ;
+}
+.member-4{
+    background-image:url(./assets/img/member-4.jpg) ;
+}
+.member-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ECF2FE;
+    max-width: 413px;
+    padding: 29px;
+}
+.member-data h5{
+    font-size: 18px;
+    font-weight: 600;
+    color: #142137;
+}
+.member-data p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #142137B2;
+}
+
+/* how it's work area */
+.work-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.work-wrapper p{
+    max-width: 451px;
+}
+.work-header{
+    max-width: 50%;
+}
+
 /* testimonial area */
 .testimonial-area{
     background-color: #ECF2FE;
@@ -549,6 +618,19 @@ body{
     width: 350px;
     height: 250px;
     margin-bottom: 23px;
+    position: relative;
+}
+
+.blog-bg span{
+    background-color: #4375e6;
+    color: #fff;
+    line-height: 26px;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 
 .blog-image-1{
@@ -589,6 +671,8 @@ body{
 .single-blog{
     max-width: 25%;
 }
+
+
 
 /* copyright  */
 .footer-area{
@@ -690,8 +774,16 @@ margin-bottom: 40px;
     margin-top: 40px;
     max-width: 168px;
 }
+.news-letter ul li a:hover  {
+    background-color: #4375e6;
+}
+.news-letter ul li a i  {
+   color: #FFF;
+}
 .news-letter ul li a{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 36px;
     height: 36px;
     border: 1px solid #fff;
@@ -699,8 +791,9 @@ margin-bottom: 40px;
     margin: 0 auto;
     border-radius: 50%;
 }
+
 .newsletter-form {
-    border: 1px solid #ddd;
+    border: 1px solid #FFFFFF24;
     padding: 5px 5px 5px 20px;
     background: transparent;
     display: flex;
@@ -711,6 +804,7 @@ margin-bottom: 40px;
     border: none;
     background: transparent;
     color: white;
+    outline: none;
 }
 input[type="submit"] {
     background: #4375E7;
