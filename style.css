@@ -668,4 +668,53 @@ margin-bottom: 40px;
     font-size: 20px;
     font-weight: 600;
     color: #fff;
+    margin-bottom: 44px;
+}
+.footer-menu ul li, .footer-menu ul li a{
+    font-size:16px;
+    line-height: 44px;
+    color: #FFFFFFB2;
+    font-weight: 500;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.footer-menu ul li a{
+    cursor: pointer;
+}
+.news-letter ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    max-width: 168px;
+}
+.news-letter ul li a{
+    display: block;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #fff;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.newsletter-form {
+    border: 1px solid #ddd;
+    padding: 5px 5px 5px 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.newsletter-form input {
+    border: none;
+    background: transparent;
+    color: white;
+}
+input[type="submit"] {
+    background: #4375E7;
+    width: 124px;
+    height: 40px;
+    
 }
