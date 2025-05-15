@@ -571,6 +571,37 @@ body{
     padding-top: 100px;
     padding-bottom: 135px;
 }
+.testimonial-wrapper .section-title{
+    background-color: transparent;
+    border: 1px solid #14213724;
+}
+.testimonial-wrapper .section-title span{
+    background-color: #142137;
+  
+}
+
+.testimonial-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.client-details{
+    display: flex;
+    gap: 14px;
+    align-items: flex-end;
+}
+.clients-images{
+    width: ;
+    height: ;
+
+}
+
+.single-testimonial{
+    max-width: 25%;
+    background-color: #fff;
+    box-shadow: 10px #ddd;
+    padding: 20px;
+}
 /* blog area */
 .blog-area{
     margin-bottom: 150px;
