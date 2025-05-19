@@ -25,6 +25,10 @@ body{
     justify-content: center;
     align-items: center;
 }
+.work-header .transparent-bg-title{
+    background-color: transparent;
+    border: 1px solid #ddd;
+}
 
 .section-heading h2{
     font-size: 54px;
@@ -692,8 +696,20 @@ body{
     line-height: 26px;
     color: #142137B2;
 }
+.team-members ul.slick-dots li{
+    margin-top: 70px;
+}
+.team-members .slick-dots li.slick-active{
+    background: #4375e6;
+    color: #fff;
+    border-radius: 50%;
 
-/* how it's work area */
+    text-align: center;
+}
+.team-members .slick-dots li.slick-active button::before{
+    color: #fff;
+}
+
 .work-wrapper{
     display: flex;
     justify-content: space-between;
