@@ -10,21 +10,27 @@
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap" rel="stylesheet">
   <!-- fontawesome icons -->
   <script src="https://kit.fontawesome.com/9b80deaf6e.js" crossorigin="anonymous"></script>
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 
 <body>
-  <!-- header top section -->
-  <div class="header-top-area">
+
+  <header class="sticky-header">
+   <!-- header top section -->
+   <div class="header-top-area">
     <div class="container">
       <div class="header-top-content">
         <div class="social">
           <span>Follow Us:</span>
           <ul>
-            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
             <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
             <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
             <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
@@ -32,91 +38,198 @@
         </div>
         <div class="contact">
           <ul>
-            <li>
-              <i class="fa-solid fa-location-dot"></i>
-              <p>Holland, London 7QU UK |</p>
+            <li><a href=""><i class="fa-solid fa-location-dot"></i>Holland, London 7QU UK |</a> 
             </li>
             <li>
-              <i class="fa-solid fa-phone"></i>
-              <p>(234) 987 - 354 - 3670 |</p>
+              <li><a href="tel:+2349873543670"><i class="fa-solid fa-phone"></i>234 - 987 - 354 - 3670 |</a> 
             </li>
             <li>
-              <i class="fa-solid fa-envelope"></i>
-              <p>Email: example@gmail.com</p>
+              <li><a href="mailto:example@gmail.com"><i class="fa-solid fa-envelope"></i>Email:example@gmail.com</a> 
             </li>
-
         </div>
       </div>
     </div>
   </div>
-  <!-- header section -->
-  <header>
+   <!-- header section -->
+   <div class="header-bottom" style="background-color: white;">
     <div class="container">
       <div class="header-content">
         <div class="logo">
-          <img src="./assets/img/Logo.png" alt="">
+          <a href="#"><img class="standard-logo" src="./assets/img/Logo.png" alt="laundry"></a>
+          <a href="#"><img class="sticky-logo" src="./assets/img/Logo.png" alt="laundry"></a>
         </div>
-        <div class="menu">
+        <nav class="menu">
           <ul>
-            <li>
-              <a href="">Home</a>
-
+            <li><a href="">Home <i class="fa-solid fa-chevron-down"></i></a>
+              <ul class="submenu">
+                <li><a href="#">Home-1</a></li>
+                <li><a href="#">Home-2</a></li>
+                <li><a href="#">Home-3</a></li>
+                <li><a href="#">Home-4</a></li>
+                <li><a href="#">Home-5</a></li>
+              </ul>
             </li>
             <li><a href="">About Us</a></li>
-            <li>
-              <a href="">Services</a>
+            <li><a href="">Services<i class="fa-solid fa-chevron-down"></i></a>
+              <ul class="submenu services">
+                <li><a href="#">Wash</a></li>
+                <li><a href="#">Clean</a></li>
+                <li><a href="#">Dry</a></li>
+              </ul>
             </li>
-            <li>
-              <a href="">Pages</a>
+            <li><a href="">Pages<i class="fa-solid fa-chevron-down"></i></a>
+              <ul class="submenu pages">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact </a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Tearms and Condition</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
             </li>
-            <li>
-              <a href="">Blog</a>
+            <li><a href="">Blog<i class="fa-solid fa-chevron-down"></i></a>
+              <ul class="submenu">
+                <li><a href="#">Blog-1</a></li>
+                <li><a href="#">Blog-2</a></li>
+                <li><a href="#">Blog-3</a></li>
+                <li><a href="#">Blog-4</a></li>
+                <li><a href="#">Blog-5</a></li>
+                
+              </ul>
             </li>
             <li><a href="">Contact</a></li>
           </ul>
-        </div>
+        </nav>
         <button class="cta-btn">Schedule a Pickup <i class="fa-solid fa-arrow-right"></i> </button>
-
       </div>
     </div>
+   </div>
+    
   </header>
   <!-- hero area -->
-  <div class="hero-area">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-text">
-          <div class="section-title">
-            <span></span>
-            <p>Dry Clean Experts</p>
-          </div>
-          <h1>Fabric Fresh Laundry <br> & Cleaning</h1>
-          <p class="hero-des">Our services are designed for convenience and efficiency, offering doorstep pickup & <br>
-            delivery to make your laundry experience as seamless as possible.</p>
-          <div class="booking-control">
-            <button>Book Laundry Now!</button>
-            <div class="customer-review">
-              <div class="clients-images">
-                <img src="./assets/img/client-1.png" alt=""></li>
-                <img src="./assets/img/client-2.png" alt=""></li>
-                <img src="./assets/img/client-3.png" alt=""></li>
-                <img src="./assets/img/client-4.png" alt=""></li>
+  <div class="hero-wrapper">
+    <div class="hero-slider">
+      <div class="hero-area hero-bg-1">
+        <img class="line-image" src="./assets/img/Line.png" alt="laundry">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <div class="section-title">
+                <span></span>
+                <p>Dry Clean Experts</p>
               </div>
-              <div class="ratings">
-                <div class="symbol">
-                  <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
-                  <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
-                  <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
-                  <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
+              <h1>Fabric Fresh Laundry <br> & Cleaning.</h1>
+              <p class="hero-des">Our services are designed for convenience and efficiency, offering doorstep pickup & <br>
+                delivery to make your laundry experience as seamless as possible.</p>
+              <div class="booking-control">
+                <button>Book Laundry Now!</button>
+                <div class="customer-review">
+                  <div class="clients-images">
+                    <img src="./assets/img/client-1.png" alt=""></li>
+                    <img src="./assets/img/client-2.png" alt=""></li>
+                    <img src="./assets/img/client-3.png" alt=""></li>
+                    <img src="./assets/img/client-4.png" alt=""></li>
+                  </div>
+                  <div class="ratings">
+                    <div class="symbol">
+                      <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
+                      <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
+                      <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
+                      <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
+                    </div>
+                    <p>8k Clients Reviews.</p>
+                  </div>
                 </div>
-                <p>8k Clients Reviews.</p>
               </div>
             </div>
+            <div class="hero-controls"></div>
           </div>
         </div>
-        <div class="hero-controls"></div>
+      </div>
+      <div class="hero-area hero-bg-2">
+        <img class="line-image" src="./assets/img/Line.png" alt="laundry">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <div class="section-title">
+                <span></span>
+                <p>Dry Clean Experts</p>
+              </div>
+              <h1>Fabric Fresh Laundry <br> & Cleaning.</h1>
+              <p class="hero-des">Our services are designed for convenience and efficiency, offering doorstep pickup & <br>
+                delivery to make your laundry experience as seamless as possible.</p>
+              <div class="booking-control">
+                <button>Book Laundry Now!</button>
+                <div class="customer-review">
+                  <div class="clients-images">
+                    <img src="./assets/img/client-1.png" alt=""></li>
+                    <img src="./assets/img/client-2.png" alt=""></li>
+                    <img src="./assets/img/client-3.png" alt=""></li>
+                    <img src="./assets/img/client-4.png" alt=""></li>
+                  </div>
+                  <div class="ratings">
+                    <div class="symbol">
+                      <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
+                      <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
+                      <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
+                      <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
+                    </div>
+                    <p>8k Clients Reviews.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-controls"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-area hero-bg-3">
+        <img class="line-image" src="./assets/img/Line.png" alt="laundry">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <div class="section-title">
+                <span></span>
+                <p>Dry Clean Experts</p>
+              </div>
+              <h1>Fabric Fresh Laundry <br> & Cleaning.</h1>
+              <p class="hero-des">Our services are designed for convenience and efficiency, offering doorstep pickup & <br>
+                delivery to make your laundry experience as seamless as possible.</p>
+              <div class="booking-control">
+                <button>Book Laundry Now!</button>
+                <div class="customer-review">
+                  <div class="clients-images">
+                    <img src="./assets/img/client-1.png" alt=""></li>
+                    <img src="./assets/img/client-2.png" alt=""></li>
+                    <img src="./assets/img/client-3.png" alt=""></li>
+                    <img src="./assets/img/client-4.png" alt=""></li>
+                  </div>
+                  <div class="ratings">
+                    <div class="symbol">
+                      <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
+                      <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
+                      <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
+                      <i style="color: yellow; width:18px; height: 18px;" class="fa-solid fa-star"></i>
+                    </div>
+                    <p>8k Clients Reviews.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-controls"></div>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="arrow-prev">
+      <span><i class="fa-solid fa-arrow-left"></i></span>
+    </div>
+    <div class="arrow-next">
+      <span><i class="fa-solid fa-arrow-right"></i></span>
+    </div>
   </div>
+    
+  
+
   <!-- about area -->
   <div class="about-area">
     <div class="container">
@@ -747,6 +860,32 @@
       </div>
     </div>
   </footer>
+
+
+  <!-- slick slider  -->
+
+  <script src="./jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+
+      $('.hero-slider').slick({
+      
+      autoplay: false,
+      autoplaySpeed: 300,
+      dots: true,
+      infinite: true,
+      slidesToShow: 1,
+      arrows: true,
+
+      // prevArrow: '<button type="button" class="slick-custom-arrow slick-prev"> ← </button>',
+      // nextArrow: '<button type="button" class="slick-custom-arrow slick-next"> ← </button>'
+
+      prevArrow: $('.arrow-prev'),
+      nextArrow: $('.arrow-next')
+      
+      
+      });
+  </script>
 
 </body>
 

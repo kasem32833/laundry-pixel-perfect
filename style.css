@@ -10,9 +10,10 @@ body{
   
    font-family: "Poppins", sans-serif;
    color: #142137B2;
+
 }
 .container{
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -35,10 +36,23 @@ body{
 
 /* common css end */
 
+.sticky-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    
+}
+.logo .standard-logo{
+    display: block;
+}
+.logo .sticky-logo{
+    display: none;
+}
 .header-top-area{
     background-color: #4375e6;
-    padding-top: 10px;
-    padding-bottom: 10px;
+
 }
 .header-top-content{
     display: flex;
@@ -46,6 +60,7 @@ body{
     align-items: center;
     color:#c7d5f8;
     font-weight: 500;
+    height: 38px;
 }
 .social{
     display: flex;
@@ -54,8 +69,7 @@ body{
 .social span{
     color: white;
     margin-right: 20px;
-    
-    font-weight: 600                                            ;
+    font-weight: 500                                           ;
 }
 .social ul, .contact ul{
     display: flex;  
@@ -67,9 +81,8 @@ body{
                                     
 .social ul li a{
     text-decoration: none;
-    display: block;
     width: 15px;
-    height: 15px; 
+    height: 14px; 
     margin-right: 20px;
     color: #c7d5f8;                                   ;
 }
@@ -88,10 +101,15 @@ body{
     margin-right: 10px;
 
 }
-.contact ul li img {
-    margin-right: 10px;
-    height: 15px;
+.contact ul li a{
+    text-decoration: none;
+    color: #ddd;
 }
+.contact ul li a i{
+    margin-right: 5px;
+    color: white;
+}
+
 
 /* header section */
 
@@ -100,7 +118,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 16px 0;
 }
 .menu ul{
     display: flex;
@@ -113,10 +131,50 @@ body{
     margin-right: 40px;
     text-decoration: none;
     color:#152137 ;
-    
     font-weight: 500;
+    transition: all .3s;
     
 }
+.menu ul li a:hover{  
+    color: #4375E7
+ }
+
+/* submenu design */
+
+.menu{
+    position: relative;
+}
+.menu .submenu{
+    position: absolute;
+    top: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+    transition: all 5s
+}
+.menu ul li:hover ul.submenu{
+    display: block;
+}
+.menu ul li:hover .submenu li{
+    list-style: none;
+    border-bottom: 1px solid #000;
+}
+.menu ul li:hover  .submenu li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+.menu ul li:hover .submenu li:last-child{
+    border-bottom: none;
+}
+
+
+
+
+
 .cta-btn {
     background-color: white;
     border: 1px solid #ddd;
@@ -126,18 +184,92 @@ body{
     gap: 5px;
     font-size: 15px;
     font-weight: 500;
+   
+}
+.cta-btn:hover {
+    background-color:#4375e6;
+    color: white;
+    
+
+}
+
+.hero-wrapper{
+    margin-top: 119px;
+    margin-bottom: 150px;
+}
+
+.hero-slider .slick-dots li{
+    margin-top: 30px;
+}
+
+.hero-slider .slick-dots li button {
+    /* display: none; */
+    background-color: #4375e6;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: white;
+    
+}
+
+.hero-slider .slick-dots li button::before {
+    color: #fff;  
+}
+
+.hero-wrapper{
+    position: relative;
+}
+.hero-wrapper .arrow-prev, .hero-wrapper .arrow-next{
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: #948F87;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.hero-wrapper .arrow-prev:hover, .hero-wrapper .arrow-next:hover{
+   background-color: #4375E7;
+}
+.hero-wrapper .arrow-prev, .hero-wrapper .arrow-next{
+    left: 90%;
+    top: 350px;
+}
+
+.hero-wrapper .arrow-next{
+    top: 51%
 }
 
 .hero-area{
+    position: relative;
     background-color: #e2e9fc;
-    background-image: url(./assets/img/hero-bg.jpg);
     width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     z-index: -1;
-    margin-bottom: 150px;
+   
+}
+.hero-area .line-image{
+    position: absolute;
+    left: 9%;
+    top: 52%;
+    z-index: -2;
+}
+.hero-bg-1{
+    background-image: url(./assets/img/hero-bg.jpg);
+}
+.hero-bg-2{
+    background-image: url(./assets/img/hero-bg-2.jpg);
+}
+.hero-bg-3{
+    background-image: url(./assets/img/hero-bg-3.jpg);
 }
    
 
@@ -148,8 +280,7 @@ body{
     content: '';
     left: 0;
     top: 0;
-    background: linear-gradient(90deg, #142137 0%, rgba(20, 33, 55, 0.10) 89.82%); 
-    opacity: 60%;
+    background: linear-gradient(90deg, #142137 0%, rgba(20, 33, 55, 0.10) 89.82%);
     z-index: -10;
     
 }
@@ -213,10 +344,16 @@ body{
     gap: 30px;
 }
 
-
+.clients-images{
+    display: flex;
+    
+}
 .clients-images img{
     width: 54px;
-    height: 54px;    
+    height: 54px;
+    margin-left: -10px;  
+    
+
 }
 
 .ratings p{
@@ -224,6 +361,10 @@ body{
     padding: 0;
     margin: 0;
 }
+
+
+/* slider design */
+
 
 /* about style */
 .about-area{
