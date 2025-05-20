@@ -1,0 +1,16 @@
+@media only screen and (max-width: 600px) {
+    /* footer */
+  .copyright,.footer-menu{
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .team-members, .order-details, .service-details, .about-content{
+    flex-direction: column;
+
+
+  }
+  .header-content nav.menu{
+    display: none;
+  }
+}
